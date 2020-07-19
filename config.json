@@ -1,8 +1,8 @@
 {
   "country_code": "us",
-  "device_family": "iphone11pro",
-  "zip_code": "90210",
-  "models": ["MW9L2LL"],
-  "carriers": ["TMOBILE/US", "SPRINT/US", "ATT/US"],
-  "stores": ["R462"]
+  "device_family": "ipad",
+  "zip_code": "96706",
+  "models": ["MXDC2LL/A", "MXDD2LL/A"],
+  "carriers": [],
+  "stores": []
 }

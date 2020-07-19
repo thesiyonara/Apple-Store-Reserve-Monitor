@@ -9,6 +9,12 @@ import time
 import crayons
 import minibar
 import requests
+import winsound
+frequency = 2500  # Set Frequency To 2500 Hertz
+duration = 5000  # Set Duration To 1000 ms == 1 second
+
+
+#winsound.PlaySound("*", winsound.SND_ALIAS)
 
 
 class Configuration:
@@ -115,7 +121,14 @@ class StoreChecker:
         # Play the sound if phone is available.
         if stock_available:
             print("\n{}".format(crayons.green("Current Status - Stock is Available")))
-            os.system('say "Device Available!"')
+            winsound.PlaySound("SystemExit", winsound.SND_ALIAS)
+            winsound.PlaySound("SystemExit", winsound.SND_ALIAS)
+            winsound.Beep(frequency,duration)
+            winsound.PlaySound("SystemExit", winsound.SND_ALIAS)
+			#os.system('say "Device Available!"')
+			
+			
+
         else:
             print("\n{}".format(crayons.red("Current Status - No Stock Available")))
         print("\n")
